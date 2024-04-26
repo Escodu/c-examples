@@ -4,14 +4,18 @@
 int main() {
 
     int v;
+    int t;
 
     // Llama a las 3 funciones
     funcion1();
     funcion2(5, 2.67);
     v = funcion3(10);
+    t = funcion5(10);
 
     // Imprime el valor que retornó funcion3()
-    printf("v = %d\n", v);
+    printf("En función3()... \nv = %d\n", v);
+    printf("En función5()... \nv = %d\n", t);
+
 
     return 0;
 
@@ -31,7 +35,11 @@ void funcion2(int a, float b) {
 // funcion3(): Imprime un mensaje. Retorna el valor que recibió como argumento
 // incrementado en 2
 int funcion3(int x) {
-    printf("En funcion3()...\n");
     int y = x + 2;
+    return y;
+}
+
+int funcion5(int x) {
+    int y = x + 3;
     return y;
 }
